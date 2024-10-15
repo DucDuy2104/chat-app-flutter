@@ -1,0 +1,1 @@
+const borderSize = 16.0;
