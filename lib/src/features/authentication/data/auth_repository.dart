@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:chat_app/src/api/dio_client.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

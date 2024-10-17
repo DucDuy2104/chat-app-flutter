@@ -1,4 +1,5 @@
 import 'package:chat_app/src/features/authentication/data/auth_repository.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../domain/user/user.dart';
@@ -13,5 +14,6 @@ final userLoginProvider = FutureProvider.autoDispose<User?>((ref) async {
     return null;
   }
   final user = await ref.watch(httpAuthRepositoryProvider).login(inputData.email, inputData.password);
+  debugPrint('image user provider: ${user?.avatar}');
   return user;
  });
